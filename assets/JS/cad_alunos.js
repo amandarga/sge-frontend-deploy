@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = 'http://localhost:8080'; // Ajuste para a URL correta da sua API
+    const apiUrl = 'https://projeto-mediotec-128688b099aa.herokuapp.com'; // Ajuste para a URL correta da sua API
 
     // Função para carregar as turmas no select
     const loadTurmas = async () => {

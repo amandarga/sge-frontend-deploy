@@ -17,7 +17,7 @@ document.getElementById('salvar').addEventListener('click', function(event) {
     console.log('JSON a ser enviado:', JSON.stringify(turma, null, 2));
 
     // Enviar os dados via POST
-    fetch('http://localhost:8080/turmas', {
+    fetch('https://projeto-mediotec-128688b099aa.herokuapp.com/turmas', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

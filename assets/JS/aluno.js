@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = 'http://localhost:8080'; // Ajuste para a URL correta da sua API
+    const apiUrl = 'https://projeto-mediotec-128688b099aa.herokuapp.com'; // Ajuste para a URL correta da sua API
 
     const alunoModal = document.getElementById('modalAluno');
     const alunoForm = document.getElementById('alunoForm');

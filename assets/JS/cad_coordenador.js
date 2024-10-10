@@ -66,7 +66,7 @@ document.getElementById('salvar').addEventListener('click', function(event) {
 
     console.log('JSON a ser enviado:', JSON.stringify(coordenador, null, 2));
 
-    fetch('http://localhost:8080/coordenadores', {
+    fetch('https://projeto-mediotec-128688b099aa.herokuapp.com/coordenadores', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

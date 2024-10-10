@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Carrega os professores, mas ao invés do id, usaremos o CPF como o valor do option
 function carregarProfessores() {
-    fetch('http://localhost:8080/professores')
+    fetch('https://projeto-mediotec-128688b099aa.herokuapp.com/professores')
         .then(response => response.json())
         .then(data => {
             console.log(data);  // Para verificar se a resposta está correta
@@ -27,7 +27,7 @@ function carregarProfessores() {
 
 // Carrega as turmas
 function carregarTurmas() {
-    fetch('http://localhost:8080/turmas')
+    fetch('https://projeto-mediotec-128688b099aa.herokuapp.com/turmas')
         .then(response => response.json())
         .then(data => {
             console.log(data);  // Para verificar se a resposta está correta
@@ -70,7 +70,7 @@ document.getElementById('salvar').addEventListener('click', function(event) {
 
     console.log(disciplina);  // Exibe o objeto para depuração
 
-    fetch('http://localhost:8080/disciplinas', {
+    fetch('https://projeto-mediotec-128688b099aa.herokuapp.com/disciplinas', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

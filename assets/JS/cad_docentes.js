@@ -1,5 +1,5 @@
 // Fetch para obter as disciplinas disponíveis no backend
-fetch('http://localhost:8080/disciplinas')
+fetch('https://projeto-mediotec-128688b099aa.herokuapp.com/disciplinas')
     .then(response => response.json())
     .then(data => {
         const disciplinasContainer = document.getElementById('disciplinas-container');
@@ -66,7 +66,7 @@ document.getElementById('salvar').addEventListener('click', function(event) {
     };
 
     // Enviar os dados via POST
-    fetch('http://localhost:8080/professores', {
+    fetch('https://projeto-mediotec-128688b099aa.herokuapp.com/professores', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

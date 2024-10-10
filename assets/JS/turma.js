@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'http://localhost:8080';
+    const apiUrl = 'https://projeto-mediotec-128688b099aa.herokuapp.com';
 
     const turmaModal = document.getElementById('modalTurma');
     const turmaForm = document.getElementById('turmaForm');
