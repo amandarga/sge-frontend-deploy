@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGE - Comunicados</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="icon" href="../images/favicon-144x144.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="barrasup">
+            <div class="icon-header">
+                <img src="../images/SGE-logo.png" alt="">
+            </div>
+        </header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="btn-expand">
+                <i class="fa-solid fa-bars" id="btn-exp"></i>
+            </div>
+            <ul>
+                <li class="item-menu">
+                    <a href="inicio.html">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span class="txt-link">Inicio</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="alunos.html">
+                        <span class="icon"><i class="fa-solid fa-user-graduate"></i></span>
+                        <span class="txt-link">Alunos</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="docentes.html">
+                        <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                        <span class="txt-link">Docentes</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="turmas.html">
+                        <span class="icon"><i class="fa-solid fa-building-user"></i></span>
+                        <span class="txt-link">Turmas</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="coordenador.html">
+                        <span class="icon"><i class="fa-solid fa-user-tie"></i></span>
+                        <span class="txt-link">Coordenadores</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="disciplinas.html">
+                        <span class="icon"><i class="fa-solid fa-chalkboard"></i></span>
+                        <span class="txt-link">Disciplinas</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="disciplinas.html">
+                        <span class="icon"><i class="fa-solid fa-chalkboard"></i></span>
+                        <span class="txt-link">Comunicados</span>
+                    </a>
+                </li>
+                <li class="item-menu ativo">
+                    <a href="comunicados.html">
+                        <span class="icon"><i class="fa-solid fa-comment-dots"></i></span>
+                        <span class="txt-link">Comunicados</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="../../index.html">
+                        <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span class="txt-link">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+           <div class="paginaref">
+            <h2 class="aluno">Comunicados</h2>
+           </div>
+            <div class="btn-add">
+                <a href="cad_comunicados.html"><button class="btn-addal" type="button">Criar comunicado</button></a>
+            </div>
+
+            <div class="linha"></div>
+
+            <!-- Tabela de Alunos -->
+            <div class="listaalunos">
+                <table border="1" id="tabelaAlunos">
+                    <thead>
+                        <tr>
+                            <th>Painel de comunicados</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaComunicados">
+                        <!-- Dados serão carregados via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal de Edição de Aluno -->
+            <div id="modalCoordenador" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="fecharModal">&times;</span>
+                    <h3 id="modalTitleCoordenador">Adicionar/Editar Coordenador</h3>
+                    <form id="coordenadorForm">
+                        <h3>Endereço</h3>
+                        <div class="linha02_modal">
+                            <div class="form-group">
+                                <label class="titlle">
+                                    <p>Título</p>
+                                    <input type="text" name="" id="titulo_comun" placeholder="Título do comunicado">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="linha02_modal">
+                            <label class="msg_comunica">
+                                <p>Mensagem</p>
+                                <textarea name="" id="msg_comun" placeholder="Digite sua mensagem"></textarea>
+                            </label>
+                        </div>
+
+                        <div class="btn-modal"><button class="btn-addal" type="submit">Salvar</button></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        
+    <script src="../JS/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/1c98dd5571.js" crossorigin="anonymous"></script>
+    <script src="../JS/aluno.js"></script>
+</body>
+</html>
